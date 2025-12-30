@@ -165,353 +165,351 @@
 
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
+    
+    
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Nithin V S</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Nithin V S</a>
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	       <div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
-	          	 <div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Nithin V S</span></h1>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav nav ml-auto">
+            <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+            <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+            <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+            <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+            <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="home-section" class="hero">
+      <div class="home-slider  owl-carousel">
+       <div class="slider-item ">
+        <div class="overlay"></div>
+         <div class="container">
+          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+            <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+             <div class="overlay"></div>
+            </div>
+            <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+              <div class="text">
+                <span class="subheading">Hello!</span>
+                <h1 class="mb-4 mt-3">I'm <span>Nithin V S</span></h1>
 
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
+            <span id="typing-animation"></span>
 
-						<script>
+            <script>
 
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
+            // Initialize the typing animation
+            const typingAnimationElement = document.getElementById('typing-animation');
 
-						// Create an array of typing text
-						const typingTexts = [
-						'BCA Graduate',
-						'Software & Hardware Engineer',
-						'Python Developer',
-						'AI & ML Enthusiast',
-						'Embedded Systems Developer',
-						'Web Developer',
-						'Innovative Problem Solver'
-					];
-
+            // Create an array of typing text
+            const typingTexts = [
+            'BCA Graduate',
+            'Software & Hardware Engineer',
+            'Python Developer',
+            'AI & ML Enthusiast',
+            'Embedded Systems Developer',
+            'Web Developer',
+            'Innovative Problem Solver'
+          ];
 
 
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
 
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
+            // Create a function to display the typing animation for a given text
+            function playTypingAnimation(text) {
+            // Loop through each character and add it to the element
+            for (let i = 0; i < text.length; i++) {
+              setTimeout(() => {
+              typingAnimationElement.textContent += text[i];
+              }, i * 200); // Increase the delay to slow down the typing animation
+            }
 
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
+            // Once the animation is complete, reset the text and start over
+            setTimeout(() => {
+              typingAnimationElement.textContent = '';
+              playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+            }, text.length * 200);
+            }
 
-						</script>
+            // Start the typing animation loop
+            playTypingAnimation(typingTexts[0]);
 
-						<br>
-						<br>
-			            <h2>Software & Hardware Engineer</h2>
-			            <p><a href="https://www.linkedin.com/in/nithin-v-s32" class="btn btn-primary py-3 px-4">LinkedIn</a> 
-							<a href="https://github.com/nithinvs32" class="btn btn-white btn-outline-white py-3 px-4">My Projects</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-		</div>
+            </script>
+
+            <br>
+            <br>
+                <h2>Software & Hardware Engineer</h2>
+                <p><a href="https://www.linkedin.com/in/nithin-v-s32" class="btn btn-primary py-3 px-4">LinkedIn</a> 
+              <a href="https://github.com/nithinvs32" class="btn btn-white btn-outline-white py-3 px-4">My Projects</a></p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     </section>
 
 
 
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    	<div class="container">
-			<div class="row">
-				<div class="row d-flex align-items-stretch">
-				<!-- <div class="row d-flex"> -->
-					<div class="col-md-6 col-lg-5 d-flex">
-						<div class="img-about img d-flex align-items-stretch">
-							<div class="overlay">
-								<div class="row">
-									<div class="col-sm-6 col-md-5">
-									  <div class="about-img">
-										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
-									  </div>
-									</div>
-									<!-- Details next to profile image -->
-									<div class="col-sm-6 col-md-7">
-									  <div class="about-info">
-										<p><span class="title-s">Name: </span> <span>Nithin V S</span></p>
-										<p><span class="title-s">Role: </span> <span>Software & Hardware Engineer</span></p>
-										<p><span class="title-s">Experience: </span> <span id="experience"></span> months</p>
+      <div class="container">
+      <div class="row">
+        <div class="row d-flex align-items-stretch">
+        <div class="col-md-6 col-lg-5 d-flex">
+            <div class="img-about img d-flex align-items-stretch">
+              <div class="overlay">
+                <div class="row">
+                  <div class="col-sm-6 col-md-5">
+                    <div class="about-img">
+                    <img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-7">
+                    <div class="about-info">
+                    <p><span class="title-s">Name: </span> <span>Nithin V S</span></p>
+                    <p><span class="title-s">Role: </span> <span>Software & Hardware Engineer</span></p>
+                    <p><span class="title-s">Experience: </span> <span id="experience"></span> months</p>
 
-										<script>
-											// Your start date in the format "YYYY-MM-DD"
-											const startDate = new Date("2024-07-18"); // Replace with your actual start date
-											const currentDate = new Date();
-										
-											// Calculate the difference in months
-											let monthsExperience = (currentDate.getFullYear() - startDate.getFullYear()) * 12;
-											monthsExperience += currentDate.getMonth() - startDate.getMonth();
-										
-											// Ensure it doesn't show negative values
-											monthsExperience = Math.max(0, monthsExperience);
-										
-											// Update the experience span
-											document.getElementById("experience").textContent = monthsExperience;
-										</script>
-										
-										<p><span class="title-s">Location: </span> <span>Bengaluru, India</span></p>
-										<p><span class="title-s">Email: </span> <span>nithinvs488@gmail.com</span></p>
-									  </div>
-									</div>
-								  </div>
+                    <script>
+                      // Your start date in the format "YYYY-MM-DD"
+                      const startDate = new Date("2024-07-18"); // Replace with your actual start date
+                      const currentDate = new Date();
+                    
+                      // Calculate the difference in months
+                      let monthsExperience = (currentDate.getFullYear() - startDate.getFullYear()) * 12;
+                      monthsExperience += currentDate.getMonth() - startDate.getMonth();
+                    
+                      // Ensure it doesn't show negative values
+                      monthsExperience = Math.max(0, monthsExperience);
+                    
+                      // Update the experience span
+                      document.getElementById("experience").textContent = monthsExperience;
+                    </script>
+                    
+                    <p><span class="title-s">Location: </span> <span>Bengaluru, India</span></p>
+                    <p><span class="title-s">Email: </span> <span>nithinvs488@gmail.com</span></p>
+                    </div>
+                  </div>
+                  </div>
 
-								<div class="skill-mf">
-									<p class="title-s">Technical Skills</p>
-									<span>Python & C/C++</span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
+                <div class="skill-mf">
+                  <p class="title-s">Technical Skills</p>
+                  <span>Python & C/C++</span> <span class="pull-right">80%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
 
-									<span>Embedded Systems</span> <span class="pull-right">75%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Web Development</span> <span class="pull-right">70%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
+                  <span>Embedded Systems</span> <span class="pull-right">75%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  
+                  <span>Web Development</span> <span class="pull-right">70%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
 
-									<span>AI & Machine Learning</span> <span class="pull-right">60%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0"
-										aria-valuemax="100"></div>
-									</div>
-								</div>
-								
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								
-								<h1 class="big">About</h1>
-								<h2 class="mb-4">Professional Summary</h2>
-								<p>Bachelor of Computer Applications graduate with expertise in software and hardware engineering. Proficient in Python, C/C++, web development, and microcontroller programming. Currently working as a Software and Hardware Junior Engineer at Ka-naada Phonetics Pvt. Ltd., specializing in regional language keyboard development and embedded systems.</p>
-								
-								<p class="mt-4"><strong>Key Competencies:</strong></p>
-								<ul class="about-info px-md-0 px-2">
-								    <li>Full-stack web development with Python, JavaScript, HTML/CSS</li>
-								    <li>Embedded systems programming (Raspberry Pi, Pico Pi)</li>
-								    <li>WordPress website development and maintenance</li>
-								    <li>AI and machine learning applications</li>
-								    <li>Multilingual platform development</li>
-								    <li>Database management with MySQL</li>
-								</ul>
+                  <span>AI & Machine Learning</span> <span class="pull-right">60%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+            <div class="row justify-content-start pb-3">
+              <div class="col-md-12 heading-section ftco-animate">
+                
+                <h1 class="big">About</h1>
+                <h2 class="mb-4">Professional Summary</h2>
+                <p>Bachelor of Computer Applications graduate with expertise in software and hardware engineering. Proficient in Python, C/C++, web development, and microcontroller programming. Currently working as a Software and Hardware Junior Engineer at Ka-naada Phonetics Pvt. Ltd., specializing in regional language keyboard development and embedded systems.</p>
+                
+                <p class="mt-4"><strong>Key Competencies:</strong></p>
+                <ul class="about-info px-md-0 px-2">
+                    <li>Full-stack web development with Python, JavaScript, HTML/CSS</li>
+                    <li>Embedded systems programming (Raspberry Pi, Pico Pi)</li>
+                    <li>WordPress website development and maintenance</li>
+                    <li>AI and machine learning applications</li>
+                    <li>Multilingual platform development</li>
+                    <li>Database management with MySQL</li>
+                </ul>
 
-								<p class="mt-4"><strong>Languages:</strong> English, Hindi, Telugu, Kannada</p>
-								<p><strong>Interests:</strong> Problem-solving, technology innovation, open-source contribution</p>
-							</div>
-						</div>
+                <p class="mt-4"><strong>Languages:</strong> English, Hindi, Telugu, Kannada</p>
+                <p><strong>Interests:</strong> Problem-solving, technology innovation, open-source contribution</p>
+              </div>
+            </div>
 
 
-						<div class="counter-wrap ftco-animate d-flex mt-md-3">
-							<div class="text">
-								<p class="mb-4">
-									<span class="number" data-number="10">0</span> <span>+</span>
-									<span>&nbsp; Projects completed</span>
-								</p>
-								<p><a href="https://www.linkedin.com/in/nithin-v-s32" class="btn btn-primary py-3 px-3">LinkedIn Profile</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+            <div class="counter-wrap ftco-animate d-flex mt-md-3">
+              <div class="text">
+                <p class="mb-4">
+                  <span class="number" data-number="10">0</span> <span>+</span>
+                  <span>&nbsp; Projects completed</span>
+                </p>
+                <p><a href="https://www.linkedin.com/in/nithin-v-s32" class="btn btn-primary py-3 px-3">LinkedIn Profile</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     </section>
 
 
 
-	
+  
     <section class="ftco-section ftco-no-pb" id="resume-section">
-    	<div class="container resume-section-spacing">
-    		<div class="row justify-content-center pb-5">
+      <div class="container resume-section-spacing">
+        <div class="row justify-content-center pb-5">
           <div class="col-md-10 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Resume</h1>
+            <h1 class="big big-2">Resume</h1>
             <h2 class="mb-4">Professional Experience</h2>
             <p>My professional journey in technology and software development</p>
           </div>
         </div>
 
-		<div class="row">
-			<h1 class="big-4">Professional Experience</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-		<div class="row">
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2024-Present</span>
-						<h2>Software and Hardware Junior Engineer</h2>
-						<span class="position">Ka-naada Phonetics Pvt. Ltd.</span>
-						<p class="mt-4">Startup specializing in keyboards for all regional languages of India.
-							<ul>
-								<li>Develop Python applications and AI-driven solutions for innovative hardware/software projects</li>
-								<li>Program microcontrollers including Raspberry Pi 5 for regional language keyboards and OpenCV projects</li>
-								<li>Lead web development for multilingual e-commerce platforms (సారిమహల్.com and सारीमहल.भारत)</li>
-								<li>Program display interfaces (OLED, TFT) with Pico Pi microcontrollers using Pico-python</li>
-								<li>Teach and run language lab at Rajanukunte to facilitate student learning</li>
-							</ul>
-						</p>
-					</div>
+    <div class="row">
+      <h1 class="big-4">Professional Experience</h1>
+      <div class="underline"></div>
+    </div>
+    <br>
+    
+    <div class="row">
+        <div class="col-md-6">
+          <div class="resume-wrap ftco-animate">
+            <span class="date">2024-Present</span>
+            <h2>Software and Hardware Junior Engineer</h2>
+            <span class="position">Ka-naada Phonetics Pvt. Ltd.</span>
+            <p class="mt-4">Startup specializing in keyboards for all regional languages of India.
+              <ul>
+                <li>Develop Python applications and AI-driven solutions for innovative hardware/software projects</li>
+                <li>Program microcontrollers including Raspberry Pi 5 for regional language keyboards and OpenCV projects</li>
+                <li>Lead web development for multilingual e-commerce platforms (సారిమహల్.com and सारीमहल.भारत)</li>
+                <li>Program display interfaces (OLED, TFT) with Pico Pi microcontrollers using Pico-python</li>
+                <li>Teach and run language lab at Rajanukunte to facilitate student learning</li>
+              </ul>
+            </p>
+          </div>
 
-				</div>
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2021-2022</span>
-						<h2>Web Developer Intern</h2>
-						<span class="position">Cre'active'</span>
-						<p class="mt-4">Web Application Development and Maintenance Intern
-							<ul>
-								<li>Developed and maintained websites using WordPress remotely</li>
-								<li>Enhanced user interface and functionality of web applications</li>
-								<li>Collaborated with team members to troubleshoot technical issues</li>
-								<li>Optimized website performance and implemented security measures</li>
-							</ul>
-						</p>
-					</div>
-				</div>
-			</div>				
-			</div>
+        </div>
+        <div class="col-md-6">
+          <div class="resume-wrap ftco-animate">
+            <span class="date">2021-2022</span>
+            <h2>Web Developer Intern</h2>
+            <span class="position">Cre'active'</span>
+            <p class="mt-4">Web Application Development and Maintenance Intern
+              <ul>
+                <li>Developed and maintained websites using WordPress remotely</li>
+                <li>Enhanced user interface and functionality of web applications</li>
+                <li>Collaborated with team members to troubleshoot technical issues</li>
+                <li>Optimized website performance and implemented security measures</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>        
+      </div>
 
-		<br>
-		<br>
+    <br>
+    <br>
 
-		<div class="row">
-			<h1 class="big-4">Education</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-		<div class="row">
-			<div class="col-md-6">
-				<div class="resume-wrap ftco-animate">
-					<span class="date">2021-2024</span>
-					<h2>Bachelor of Computer Applications</h2>
-					<span class="position">Nagarjuna College of Management Studies, Chikballpura</span>
-					<p class="mt-4">First Class Distinction</p>
-				</div>
-			</div>
-		
-			<div class="col-md-6">
-				<div class="resume-wrap ftco-animate">
-					<span class="date">2018-2020</span>
-					<h2>Pre-University Course (PCMCs)</h2>
-					<span class="position">Vidyanidhi PU College</span>
-					<p class="mt-4">First Class Distinction</p>
-				</div>
-			</div>
-		
-			<div class="col-md-6">
-				<div class="resume-wrap ftco-animate">
-					<span class="date">2016-2018</span>
-					<h2>Secondary School Education</h2>
-					<span class="position">Sharada High School</span>
-					<p class="mt-4">First Class Distinction</p>
-				</div>
-			</div>
-		</div>
-		
+    <div class="row">
+      <h1 class="big-4">Education</h1>
+      <div class="underline"></div>
+    </div>
+    <br>
+    
+    <div class="row">
+      <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <span class="date">2021-2024</span>
+          <h2>Bachelor of Computer Applications</h2>
+          <span class="position">Nagarjuna College of Management Studies, Chikballpura</span>
+          <p class="mt-4">First Class Distinction</p>
+        </div>
+      </div>
+    
+      <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <span class="date">2018-2020</span>
+          <h2>Pre-University Course (PCMCs)</h2>
+          <span class="position">Vidyanidhi PU College</span>
+          <p class="mt-4">First Class Distinction</p>
+        </div>
+      </div>
+    
+      <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <span class="date">2016-2018</span>
+          <h2>Secondary School Education</h2>
+          <span class="position">Sharada High School</span>
+          <p class="mt-4">First Class Distinction</p>
+        </div>
+      </div>
+    </div>
+    
 
-		<div class="row">
-			<h1 class="big-4">Certifications</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-		<div class="row">
-			<div class="col-md-6">
-				<div class="resume-wrap ftco-animate">
-					<span class="date">2024</span>
-					<h2>Python for Data Science</h2>
-					<span class="position">Online Certification</span>
-					<p class="mt-4">Advanced Python programming for data analysis, machine learning, and scientific computing.</p>
-				</div>
-			</div>
-		
-			<div class="col-md-6">
-				<div class="resume-wrap ftco-animate">
-					<span class="date">2024</span>
-					<h2>Web Development Frameworks</h2>
-					<span class="position">Online Certification</span>
-					<p class="mt-4">Full-stack development with modern frameworks including Flask, Django, and React.</p>
-				</div>
-			</div>
-		
-			<div class="col-md-6">
-				<div class="resume-wrap ftco-animate">
-					<span class="date">2023</span>
-					<h2>Embedded Systems Programming</h2>
-					<span class="position">Online Certification</span>
-					<p class="mt-4">Microcontroller programming with Raspberry Pi, Pico Pi, and IoT development.</p>
-				</div>
-			</div>
-			
-			<div class="col-md-6">
-				<div class="resume-wrap ftco-animate">
-					<span class="date">2023</span>
-					<h2>Machine Learning Fundamentals</h2>
-					<span class="position">Online Certification</span>
-					<p class="mt-4">Core concepts of machine learning algorithms, data preprocessing, and model evaluation.</p>
-				</div>
-			</div>
-		</div>
+    <div class="row">
+      <h1 class="big-4">Certifications</h1>
+      <div class="underline"></div>
+    </div>
+    <br>
+    
+    <div class="row">
+      <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <span class="date">2024</span>
+          <h2>Python for Data Science</h2>
+          <span class="position">Online Certification</span>
+          <p class="mt-4">Advanced Python programming for data analysis, machine learning, and scientific computing.</p>
+        </div>
+      </div>
+    
+      <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <span class="date">2024</span>
+          <h2>Web Development Frameworks</h2>
+          <span class="position">Online Certification</span>
+          <p class="mt-4">Full-stack development with modern frameworks including Flask, Django, and React.</p>
+        </div>
+      </div>
+    
+      <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <span class="date">2023</span>
+          <h2>Embedded Systems Programming</h2>
+          <span class="position">Online Certification</span>
+          <p class="mt-4">Microcontroller programming with Raspberry Pi, Pico Pi, and IoT development.</p>
+        </div>
+      </div>
+      
+      <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <span class="date">2023</span>
+          <h2>Machine Learning Fundamentals</h2>
+          <span class="position">Online Certification</span>
+          <p class="mt-4">Core concepts of machine learning algorithms, data preprocessing, and model evaluation.</p>
+        </div>
+      </div>
+    </div>
 
-		<div class="row justify-content-center mt-5" id="cvSection">
-			<div class="col-md-ps://drive.google.com/file/d/1WUgIGGNOmCg73Fl9hZd6ge3m4O2p1OfF/view?usp=sharing" class="btn btn-primary py-4 px-5" download>Download Detailed Resume</a></p>
-			</div>
-		</div>
-		
+    <div class="row justify-content-center mt-5" id="cvSection">
+        <div class="col-md-12 text-center">
+            <p><a href="https://drive.google.com/file/d/1WUgIGGNOmCg73Fl9hZd6ge3m4O2p1OfF/view?usp=sharing" class="btn btn-primary py-4 px-5" target="_blank">Download Detailed Resume</a></p>
+        </div>
+    </div>
+    
     </section>
 
    
@@ -527,7 +525,7 @@
         </div>
         <div class="row d-flex">
           <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
+            <div class="blog-entry justify-content-end">
               <a href="#smart-finance-tracker" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');" data-toggle="modal" data-target="#projectModal" onclick="showProjectDetails('smart-finance')">
               </a>
               <div class="text mt-3 float-right d-block">
@@ -537,7 +535,7 @@
             </div>
           </div>
           <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
+            <div class="blog-entry justify-content-end">
               <a href="#ecommerce-platform" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');" data-toggle="modal" data-target="#projectModal" onclick="showProjectDetails('ecommerce')">
               </a>
               <div class="text mt-3 float-right d-block">
@@ -547,7 +545,7 @@
             </div>
           </div>
           <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
+            <div class="blog-entry">
               <a href="#microcontroller-projects" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');" data-toggle="modal" data-target="#projectModal" onclick="showProjectDetails('microcontroller')">
               </a>
               <div class="text mt-3 float-right d-block">
@@ -557,34 +555,32 @@
             </div>
           </div>
         </div>
-	<br>
-		<!-- added justify-content-center to center align the last two projects -->
-		<div class="row d-flex justify-content-center">  
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="#web-development" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');" data-toggle="modal" data-target="#projectModal" onclick="showProjectDetails('web')">
-				</a>
-				<div class="text mt-3 float-right d-block">
-				  <h3 class="heading"><a href="#web-development" data-toggle="modal" data-target="#projectModal" onclick="showProjectDetails('web')">WordPress Development</a></h3>
-				  <p>Custom themes, plugins, and website maintenance</p>
-				</div>
-			  </div>
-			</div>
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="#ai-projects" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');" data-toggle="modal" data-target="#projectModal" onclick="showProjectDetails('ai')">
-				</a>
-				<div class="text mt-3 float-right d-block">
-				  <h3 class="heading"><a href="#ai-projects" data-toggle="modal" data-target="#projectModal" onclick="showProjectDetails('ai')">AI & Machine Learning</a></h3>
-				  <p>Intelligent solutions and predictive analytics</p>
-				</div>
-			  </div>
-			</div>
-		 </div>
-	  </div>
+  <br>
+    <div class="row d-flex justify-content-center">  
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+        <a href="#web-development" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');" data-toggle="modal" data-target="#projectModal" onclick="showProjectDetails('web')">
+        </a>
+        <div class="text mt-3 float-right d-block">
+          <h3 class="heading"><a href="#web-development" data-toggle="modal" data-target="#projectModal" onclick="showProjectDetails('web')">WordPress Development</a></h3>
+          <p>Custom themes, plugins, and website maintenance</p>
+        </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+        <a href="#ai-projects" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');" data-toggle="modal" data-target="#projectModal" onclick="showProjectDetails('ai')">
+        </a>
+        <div class="text mt-3 float-right d-block">
+          <h3 class="heading"><a href="#ai-projects" data-toggle="modal" data-target="#projectModal" onclick="showProjectDetails('ai')">AI & Machine Learning</a></h3>
+          <p>Intelligent solutions and predictive analytics</p>
+        </div>
+        </div>
+      </div>
+     </div>
+    </div>
     </section>
 
-    <!-- Project Details Modal -->
     <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -595,8 +591,7 @@
             </button>
           </div>
           <div class="modal-body" id="projectModalBody">
-            <!-- Project details will be loaded here -->
-          </div>
+            </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
@@ -699,10 +694,10 @@
         document.getElementById("projectModalBody").innerHTML = content;
       }
     </script>
-	
+  
     <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
       <div class="container">
-		<div class="row d-md-flex align-items-center">
+    <div class="row d-md-flex align-items-center">
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18">
               <div class="text">
@@ -722,27 +717,25 @@
 
         </div>
       </div>
-	
-	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
-			<!-- <div class="container"> -->
-				<div class="row justify-content-center">
-					<div class="col-md-7 ftco-animate text-center">
-						<h2>More projects on<span> Github  </span> </h2>
-						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
-						<br>
-						<p><a href="https://github.com/nithinvs32" class="btn btn-primary py-3 px-5">GitHub</a></p>
-						</div>
-					</div>
-				</div>
-			<!-- </div> -->
-		</div>
-	</section>
+  
+    <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+      <div class="row justify-content-center">
+          <div class="col-md-7 ftco-animate text-center">
+            <h2>More projects on<span> Github  </span> </h2>
+            <div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+            <br>
+            <p><a href="https://github.com/nithinvs32" class="btn btn-primary py-3 px-5">GitHub</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
 
 
 
     <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
       <div class="container">
-      	<div class="row justify-content-center mb-5 pb-3">
+        <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2">Contact</h1>
             <h2 class="mb-4">Contact Me</h2>
@@ -752,85 +745,80 @@
 
         <div class="row d-flex contact-info mb-5">
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-map-signs"></span>
-          		</div>
-          		<h3 class="mb-4">Address</h3>
-	            <p>Bengaluru, India</p>
-	          </div>
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-map-signs"></span>
+              </div>
+              <h3 class="mb-4">Address</h3>
+              <p>Bengaluru, India</p>
+            </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-phone2"></span>
-          		</div>
-          		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://8123040488">+91 8123040488</a></p>
-	          </div>
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-phone2"></span>
+              </div>
+              <h3 class="mb-4">Contact Number</h3>
+              <p><a href="tel://8123040488">+91 8123040488</a></p>
+            </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-paper-plane"></span>
-          		</div>
-          		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="nithinvs488@gmail.com">nithinvs488@gmail.com</a></p>
-	          </div>
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-paper-plane"></span>
+              </div>
+              <h3 class="mb-4">Email Address</h3>
+              <p><a href="nithinvs488@gmail.com">nithinvs488@gmail.com</a></p>
+            </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-globe"></span>
-          		</div>
-          		<h3 class="mb-4">Download Resume</h3>
-				  <p><a href="#cvSection">Download My Resume</a></p>
-	          </div>
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-globe"></span>
+              </div>
+              <h3 class="mb-4">Download Resume</h3>
+              <p><a href="#cvSection">Download My Resume</a></p>
+            </div>
           </div>
 
-		  <div class="container">
-			<br>
-			<br>
-			<div class="row justify-content-center">
-				<div class="col-md-7 ftco-animate text-center">
-					<h2>Have a<span> Question?  </span> 
-						<a href="https://forms.gle/XCBs31MCTziCGQAG7" class="btn btn-primary py-3 px-5" target="_blank">Click Here</a>
-					</h2>
-				</div>
-			</div>
-			
-				<br>
-					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
-					  <li class="ftco-animate normal-txt">Find me on  </li>
-					  <!-- <li class="ftco-animate"><a href="https://www.youtube.com/"><span class="icon-youtube"></span></a></li> -->
-					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/Nithin-V-S32/"><span class="icon-linkedin"></span></a></li>  
-					  <!-- <li class="ftco-animate"><a href="https://twitter.com/nithinvs32"><span class="icon-twitter"></span></a></li> -->
-					  <!-- <li class="ftco-animate"><a href="https://twitter.com/nithinvs32"><span class="icon-facebook"></span></a></li> -->
-				      <li class="ftco-animate"><a href="https://www.instagram.com/nithinvs32/"><span class="icon-instagram"></span></a></li>
-					</ul>
-				<br>
-		   </div>
+        <div class="container">
+          <br>
+          <br>
+          <div class="row justify-content-center">
+            <div class="col-md-7 ftco-animate text-center">
+              <h2>Have a<span> Question?  </span> 
+                <a href="https://forms.gle/XCBs31MCTziCGQAG7" class="btn btn-primary py-3 px-5" target="_blank">Click Here</a>
+              </h2>
+            </div>
+          </div>
+          
+            <br>
+              <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+                <li class="ftco-animate normal-txt">Find me on  </li>
+                <li class="ftco-animate"><a href="https://www.linkedin.com/in/Nithin-V-S32/"><span class="icon-linkedin"></span></a></li>  
+                <li class="ftco-animate"><a href="https://www.instagram.com/nithinvs32/"><span class="icon-instagram"></span></a></li>
+              </ul>
+            <br>
+       </div>
    </div>
  </section>
 
 
  
-	
-    <footer class="ftco-footer ftco-section">
-		<div class="container">
-		  <div class="row">
-			<div class="col-md-12 text-center">
   
-			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
-	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-			</div>
-		  </div>
-		</div>
-	  </footer>
+    <footer class="ftco-footer ftco-section">
+    <div class="container">
+      <div class="row">
+      <div class="col-md-12 text-center">
+  
+        <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
+  </p>
+      </div>
+      </div>
+    </div>
+    </footer>
 
 
-  <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
